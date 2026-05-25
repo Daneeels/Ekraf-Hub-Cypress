@@ -5,10 +5,6 @@ class KataKreatif {
     orangeCard = '.kata-card.kata-card--orange.default'
 
     //Actions
-    visitKataKreatif(){
-        cy.contains('a', 'Kata Kreatif').click()
-        cy.url().should('include', '/kata-kreatif')
-    }
 
     checkGreenCard(){
         cy.get(this.greenCard).should('contain.text', 'Kota/Kabupaten Kreatif yang Telah Mendaftar')

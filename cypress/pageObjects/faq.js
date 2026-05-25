@@ -5,10 +5,6 @@ class FAQ {
     faqButton = '.b-faq__box__button'
 
     //Actions
-    visitFAQ(){
-        cy.contains('a', 'FAQ').click()
-        cy.url().should('include', '/faq')
-    }
 
     togglePanel(){
         cy.get(this.faqContainer).each(($box, index) => {
