@@ -11,6 +11,4 @@ describe('Kata Kreatif Testing', () => {
         cy.get('.kata-card.kata-card--green.default').should('contain.text', 'Kota/Kabupaten Kreatif yang Telah Mendaftar')
         cy.get('.kata-card.kata-card--orange.default').should('contain.text', 'Kota/Kabupaten Kreatif yang Telah ditetapkan')
     })
-
-    
 })
